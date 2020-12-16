@@ -1,0 +1,9 @@
+python3-dev
+build-base
+util-linux
+musl-dev
+gcc
+g++
+freetype-dev
+libpng-dev
+libjpeg-turbo-dev

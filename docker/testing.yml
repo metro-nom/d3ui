@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  ui:
+    build:
+      context: ${PWD}
+      dockerfile: docker/Dockerfile
+    environment:
+      - D3URI_API
+    volumes:
+      - .:/code
+      - ./d3api:/code/d3api
+    ports:
+      - "8091:8091"
+    networks:
+      - backend
+
+networks:
+  backend:
+
+volumes:
+  db-data:

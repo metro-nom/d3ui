@@ -1,0 +1,57 @@
+{
+  "name": "d3ui",
+  "version": "20.12.2",
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "description": "React components to build d3 ui",
+  "repository": {},
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
+  },
+  "scripts": {
+    "version": "parcel --version",
+    "help_build": "parcel help build",
+    "build": "parcel build d3ui/src/index.js --log-level 3 --no-source-maps --no-cache -d d3ui/static",
+    "build_dev": "parcel build d3ui/src/index.js --log-level 3 --no-minify --no-cache -d d3ui/static",
+    "build_beta": "parcel build d3ui/src/index.js --log-level info --no-cache --dist-dir d3ui/static/dist",
+    "build4": "parcel build -d d3ui/static/dist d3ui/src/index.js",
+    "build3": "parcel build d3ui/src/index.js --target node -d ddd",
+    "buildm": "parcel build d3ui/src/index.js --target node --bundle-node-modules -d d3ui/static/dist",
+    "watch": "parcel watch d3ui/src/index.js -d d3ui/static/dist"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-react": "^7.12.10",
+    "parcel": "^1.12.4"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.2",
+    "connected-react-router": "^6.8.0",
+    "core-js": "^3.8.1",
+    "d3": "^5.16.0",
+    "d3-drag": "^1.2.5",
+    "d3-force": "^2.1.1",
+    "d3-shape": "^1.3.7",
+    "d3-zoom": "^1.8.3",
+    "final-form": "^4.20.1",
+    "history": "^4.10.1",
+    "immutable": "^4.0.0-rc.12",
+    "node-core-lib": "^0.11.11",
+    "ra-core": "^3.11.0",
+    "react": "^16.13.1",
+    "react-admin": "^3.11.0",
+    "react-d3-graph": "^2.5.0",
+    "react-dom": "^16.14.0",
+    "react-final-form": "^6.5.2",
+    "react-redux": "^7.2.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-tooltip": "^4.2.11",
+    "redux": "^4.0.5",
+    "redux-saga": "^1.1.3",
+    "seamless-immutable": "^7.1.4",
+    "typescript": "^3.9.7"
+  }
+}
